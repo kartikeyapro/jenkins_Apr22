@@ -18,7 +18,7 @@ pipeline {
             }
         stage('Code Clone') {
             steps {
-             git changelog: false, credentialsId: 'git', poll: false, url: 'https://github.com/kartikeyapro/ks.git'   
+             git branch: 'main', credentialsId: 'git', url: 'https://github.com/kartikeyapro/ks.git'  
             }           
             }
         stage('Maven Clean') {
