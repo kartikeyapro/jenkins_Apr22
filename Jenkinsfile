@@ -1,7 +1,4 @@
 pipeline {
-    agent {
-		label 'Jenkins-node1'
-	}
 
     tools {
         maven 'Maven 3.0.5'
