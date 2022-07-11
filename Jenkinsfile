@@ -21,6 +21,11 @@ pipeline {
              git branch: 'main', credentialsId: 'git', url: 'https://github.com/kartikeyapro/ks.git'  
             }           
             }
+        stage('List content') {
+            steps {
+             sh 'ls -l'   
+            }           
+            }			
         stage('Maven Clean') {
             steps {
              sh 'mvn clean'   
